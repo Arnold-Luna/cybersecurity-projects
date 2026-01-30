@@ -1,4 +1,4 @@
-incident-response # Incident Response Labs
+# Incident Response Labs
 
 This folder documents hands-on incident response exercises focused on identifying, analyzing, and responding to security incidents.
 
