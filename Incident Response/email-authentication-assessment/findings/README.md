@@ -28,6 +28,6 @@ DMARC is in monitoring mode only, allowing malicious emails to pass.
 ## Supporting Evidence
 ## Email Authentication Results (MXToolbox)
 
-[MXToolbox Email Authentication Results](screenshots/email%20redacted.png)
+[MXToolbox Email Authentication Results](email%20redacted.png)
 
 *Figure: MXToolbox scan output showing SPF, DKIM, and DMARC authentication results used to support assessment findings.*
