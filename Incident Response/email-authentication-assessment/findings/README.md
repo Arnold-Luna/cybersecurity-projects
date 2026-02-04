@@ -28,4 +28,5 @@ DMARC is in monitoring mode only, allowing malicious emails to pass.
 ## Supporting Evidence
 ## Email Authentication Results (MXToolbox)
 
-![MXToolbox Email Authentication](images/mxtoolbox-email-auth.png)
+[![MXToolbox Email Authentication Results](images/mxtoolbox-email-auth.png)](images/mxtoolbox-email-auth.png)
+
