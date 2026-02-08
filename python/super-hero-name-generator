@@ -1,0 +1,31 @@
+import random
+
+print("🦸 Superhero Name Generator 🦸")
+print("Enter anything you want. Traits, places, powers, nonsense.")
+print("Press ENTER on a blank line when you're done.\n")
+
+inputs = []
+
+while True:
+    entry = input("Enter a word or phrase: ").strip()
+    if entry == "":
+        break
+    inputs.append(entry)
+
+if len(inputs) < 2:
+    print("\nYou need at least two inputs. Even superheroes need origins.")
+    exit()
+
+print("\nGenerating superhero names...\n")
+
+while True:
+    name = " ".join(
+        random.sample(inputs, k=random.randint(2, min(4, len(inputs))))
+    )
+
+    print(f"🦸‍♂️ {name}")
+
+    again = input("\nPress ENTER for another | type 'q' to quit: ").lower()
+    if again == "q":
+        print("\nCape disengaged.")
+        break
