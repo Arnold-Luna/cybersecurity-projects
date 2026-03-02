@@ -1,63 +1,65 @@
-# 🚨 Enterprise SIEM Lab – Wazuh + Suricata Integration
+# 🚨 Enterprise SIEM Lab – Wazuh + Suricata + Kali Linux Attack Simulation
 
 ## 📌 Overview
 
-This project demonstrates the deployment and integration of a Security Information and Event Management (SIEM) platform using:
+This project demonstrates the deployment of an enterprise-style SIEM environment using:
 
 - Wazuh (SIEM / XDR platform)
 - Suricata (Network IDS)
-- OpenSearch (Data indexing engine)
-- Ubuntu Server 24.04
-- Kali Linux
-- Virtualized lab environment
+- OpenSearch (Indexer)
+- Kali Linux (Attacker machine)
+- Ubuntu Server 24.04 (Target + SIEM host)
 
-The objective was to simulate enterprise SOC monitoring capabilities by ingesting IDS alerts into a centralized SIEM for analysis and investigation.
+The objective was to simulate real-world attack activity and validate detection, ingestion, and alert visibility within a centralized monitoring platform.
 
 ---
 
-## 🏗 Architecture
+## 🏗 Lab Architecture
 
-Data Flow:
-
-Network Traffic  
-↓  
-Suricata IDS (EVE JSON logs)  
-↓  
-Wazuh Log Collection  
-↓  
-Wazuh Manager  
-↓  
-OpenSearch Indexer  
-↓  
-Wazuh Dashboard  
+Attacker (Kali Linux)
+↓
+Brute Force + Network Scanning
+↓
+Suricata IDS (EVE JSON logs)
+↓
+Wazuh Manager
+↓
+OpenSearch Indexer
+↓
+Wazuh Dashboard
 
 ---
 
 ## ⚙️ Technologies Used
 
-- Ubuntu Server 24.04 LTS
-- Kali Linux
+- Ubuntu Server 24.04 LTS  
+- Kali Linux  
 - Wazuh 4.x  
 - Suricata 7.x  
 - OpenSearch  
-- TLS-secured services  
 - Emerging Threats (ET) rules  
+- TLS-secured services  
 
 ---
 
-## 🛠 Implementation Summary
+## 🛠 Implementation Steps
 
-### 1. Deployed Wazuh Stack
+### 1️⃣ Deployed Wazuh Stack
+
 - Installed Wazuh manager, indexer, and dashboard
 - Configured TLS certificates
-- Verified backend connectivity using curl
+- Verified backend connectivity with curl
+- Validated service status using systemctl and journalctl
 
-### 2. Installed and Configured Suricata
-- Enabled AF_PACKET capture
-- Activated Emerging Threats rules
+---
+
+### 2️⃣ Installed & Configured Suricata
+
+- Enabled AF_PACKET packet capture
+- Activated Emerging Threats rule set
 - Enabled EVE JSON logging
 
-Example:
+Example configuration:
 
 ```yaml
 eve-log:
@@ -66,63 +68,81 @@ eve-log:
   filename: eve.json
 ```
 
-### 3. Generated Detection Events
-Simulated malicious and suspicious activity:
-
-- Nmap scanning activity
-- Suspicious user-agent detection
-- Protocol mismatches
-- TLS anomalies
-
-Example Alert:
-
-ET SCAN Possible Nmap User-Agent Observed  
-Classification: Web Application Attack  
-Priority: 1  
-
-### 4. Integrated Suricata Logs into Wazuh
-
-Configured Wazuh to monitor:
+Monitored log file:
 
 /var/log/suricata/eve.json
 
-Enabled structured JSON log ingestion for centralized detection.
+---
+
+### 3️⃣ Attack Simulation from Kali Linux
+
+From the Kali attacker machine:
+
+- Performed Nmap reconnaissance scanning
+- Simulated brute force login attempts
+- Generated suspicious traffic patterns
+
+Examples:
+
+• Nmap TCP SYN scan  
+• SSH brute force attempts  
+• Aggressive service enumeration  
 
 ---
 
-## 🔍 Detection Examples
+### 4️⃣ Detection & Alert Validation
 
-- ET SCAN Possible Nmap User-Agent
-- TLS Invalid Record Type
-- Protocol Mismatch Events
-- Benign application detections validating ingestion pipeline
+Suricata generated alerts including:
+
+- ET SCAN Possible Nmap User-Agent Observed
+- Brute Force related connection attempts
+- Protocol mismatches
+- TLS anomalies
+
+Wazuh successfully ingested and indexed alerts for dashboard visibility and investigation.
+
+---
+
+## 🔍 Detection Scenarios Demonstrated
+
+### 🔐 Brute Force Activity
+Multiple failed authentication attempts detected and logged.
+
+### 🌐 Network Reconnaissance
+Nmap scanning activity flagged by Emerging Threats rules.
+
+### 📊 SIEM Validation
+Confirmed ingestion pipeline integrity from IDS → Wazuh → OpenSearch → Dashboard.
 
 ---
 
 ## 🧠 Skills Demonstrated
 
 - SIEM deployment and configuration
-- IDS rule management
-- Log ingestion pipeline configuration
-- TLS troubleshooting
-- IPv4 vs IPv6 binding analysis
-- Service debugging using systemctl and journalctl
-- Detection validation and alert analysis
+- IDS tuning and rule management
+- Attack simulation using Kali Linux
+- Brute force detection analysis
+- Log ingestion troubleshooting
+- TLS configuration debugging
+- IPv4 vs IPv6 binding validation
+- Service management with systemctl
+- Security event validation workflow
 
 ---
 
-## 🎯 SOC Relevance
+## 🎯 SOC-Relevant Capabilities
 
-This project demonstrates practical experience in:
+This lab demonstrates hands-on blue team capabilities including:
 
 - Monitoring IDS alerts
-- Investigating network-based threats
-- Validating SIEM ingestion pipelines
-- Troubleshooting security platform integrations
-- Supporting blue team detection workflows
+- Investigating brute force attempts
+- Validating detection pipelines
+- Analyzing reconnaissance activity
+- Troubleshooting SIEM integrations
+- Simulating adversary techniques in controlled environment
 
 ---
 
 ## 📈 Outcome
 
-Successfully deployed an enterprise-style monitoring stack capable of detecting and visualizing network-based threats in a centralized dashboard environment.
+Successfully built and validated an enterprise-style monitoring stack capable of detecting reconnaissance and brute force activity in a centralized SIEM environment using real attack simulation.
