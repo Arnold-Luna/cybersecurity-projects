@@ -1,5 +1,6 @@
-🚨 Wazuh + Suricata SIEM & IDS Integration Lab
-🔎 Project Overview
+##🚨 Wazuh + Suricata SIEM & IDS Integration Lab
+
+##🔎 Project Overview
 This project demonstrates the design and deployment of a security monitoring lab integrating:
 
 -Wazuh (SIEM/XDR platform)
