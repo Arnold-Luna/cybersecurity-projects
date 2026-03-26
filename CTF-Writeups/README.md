@@ -1,38 +1,54 @@
-# PicoCTF Write-Ups 2026
+# 🧠 CTF Writeups Repository
 
-## Environment
+## 📌 Overview
+The CTF Writeups repository documents my participation in various Capture The Flag (CTF) challenges across multiple platforms and difficulty levels. This collection highlights my hands-on experience in offensive and defensive security practices, including vulnerability exploitation, threat analysis, and problem-solving in simulated adversarial environments.
 
-These challenges were completed on a HP laptop running windows with an i9.
-For access to tooling better suited to forensic and pentesting work, I used a Kali XFCE virtual machine, especially for challenges involving SSH or other remote access.
+Each writeup provides a structured breakdown of the challenge, methodology, tools used, and key takeaways, demonstrating practical application of cybersecurity concepts aligned with real-world scenarios.
 
-## General Skills
+## 🎯 Objectives
+Document and reinforce practical cybersecurity skills through CTF participation
+Demonstrate proficiency in identifying, analyzing, and exploiting vulnerabilities
+Showcase structured problem-solving and analytical thinking
+Build a portfolio of hands-on security experience for SOC, IR, and cloud security roles
 
-## SUDO MAKE ME A SANDWICH
+## 🔍 Challenge Overview
+Platform / CTF Name
+Category (e.g., Web, Network, Forensics, Crypto, Reverse Engineering)
+Difficulty Level
 
-Points: 50
+## ⚙️ Methodology
+Enumeration and reconnaissance techniques
+Vulnerability identification
+Exploitation steps
+Post-exploitation (if applicable)
 
-Summary:
-Can the flag be read, and if so, how?
 
-Notes:
-I ran ls -la to inspect the directory contents and found flag.txt, but elevated permissions were required to read it. Running sudo -l showed that emacs could be executed as root. Using that privilege, I opened the file with sudo emacs flag.txt and retrieved the flag.
+## 🛠️ Tools & Technologies
+Examples may include:
+Nmap, Burp Suite, Wireshark
+Kali Linux, Metasploit, CyberChef
+Custom scripts (Python, Bash, etc.)
 
-## Piece by Piece
+## 🧾 Findings & Evidence
+Key outputs, logs, or artifacts
+Screenshots of exploitation steps
+Flag capture validation
 
-Points: 50
+## 🧠 Lessons Learned
+Key takeaways from the challenge
+Defensive considerations and mitigation strategies
+Mapping to frameworks such as MITRE ATT&CK where applicable
 
-Summary:
-After logging in, multiple file fragments are present in the home directory. These parts must be combined to recover the flag.
+## 🔐 Skills Demonstrated
+Threat detection and analysis
+Vulnerability assessment and exploitation
+Network traffic analysis
+Log analysis and SIEM investigation
+Secure configuration and hardening concepts
+Adversary emulation and attack simulation
 
-Notes:
-I found several numbered files in the home directory and used cat file* > flag.txt to combine them into a single output, which revealed the flag. Note: file* is a placeholder for the actual file names.
+## 🚀 Continuous Improvement
+This repository is continuously updated as I participate in additional CTF events and refine my techniques. Each writeup reflects iterative learning and an evolving understanding of modern cybersecurity threats and defenses.
 
-## Password Profiler
-
-Points: 100
-
-Summary:
-Using OSINT-style personal details about a target, generate a custom password list and recover the original password by matching its hash.
-
-Notes:
-Personal information was provided in userinfo.txt. I used those details with CUPP to generate a targeted wordlist, then used that list to crack the provided password hash with the provided check_password script.
+## ⚠️ Disclaimer
+All activities documented in this repository were conducted in controlled, legal environments such as CTF platforms and lab environments. The techniques demonstrated are strictly for educational and professional development purposes.
