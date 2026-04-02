@@ -138,6 +138,50 @@ This demonstrates:
 
 ---
 
+## ⚙️ 4A Alternate Remediation Method: PowerShell Script
+In addition to manual remediation through Registry Editor, the same STIG control can be remediated using a PowerShell script.
+
+This provides a more scalable approach for repeated testing and better reflects how security teams automate compliance tasks in enterprise environments.
+
+### 🔗 Script Link
+[View PowerShell Script](Scripts/enable-sehop-stig.ps1)
+
+### Script Name
+```text
+enable-sehop-stig.ps1
+```
+
+### Script Function
+The script performs the following actions:
+1. Defines the target registry path for the SEHOP control
+2. Checks whether the required registry value exists
+3. Creates or updates the DWORD value if needed
+4. Verifies the registry value after modification
+5. Prompts for reboot and SCAP re-validation
+
+### Target Registry Setting
+```text
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel
+DisableExceptionChainValidation = 0
+```
+
+### How to Run
+Open PowerShell as Administrator and run:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+.\enable-sehop-stig.ps1
+```
+
+### Why This Matters
+This alternate fix demonstrates:
+- PowerShell-based compliance automation
+- repeatable remediation workflow
+- scalable registry hardening
+- validation-focused security engineering
+  
+---
+
 ## 5️⃣ Post-Remediation Improved Score
 After applying the registry fix and re-running the benchmark, the score increased from:
 
