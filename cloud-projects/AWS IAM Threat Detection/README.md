@@ -47,19 +47,19 @@ These screenshots document the **full detection lifecycle**, from event ingestio
 
 Shows the event pattern used to detect dangerous IAM management actions from CloudTrail, including policy attachment and identity changes.
 
-![EventBridge Rule](./screenshots/01_eventbridge_detection_rule.png)
+![EventBridge Rule](sandbox:/mnt/data/01_eventbridge_detection_rule.png)
 
 ### 2) Lambda Monitoring & Execution Metrics
 
 Highlights successful serverless processing, invocation counts, duration, concurrency, and throttling visibility through CloudWatch metrics.
 
-![Lambda Monitor](./screenshots/02_lambda_monitor_metrics.png)
+![Lambda Monitor](sandbox:/mnt/data/02_lambda_monitor_metrics.png)
 
 ### 3) DynamoDB Incident Evidence Record
 
 Displays a **HIGH severity incident record** enriched by Lambda and persisted for investigation, including actor, event name, timestamp, region, severity, and raw event evidence.
 
-![DynamoDB Incident Record](./screenshots/03_dynamodb_high_severity_record.png)
+![DynamoDB Incident Record](sandbox:/m
 
 ### 4) SNS High-Severity Email Alert
 
@@ -156,4 +156,3 @@ Built by a cybersecurity professional focused on:
 * AWS Security Automation
 
 If this project aligns with your team’s needs, I’d love to connect.
-
