@@ -44,35 +44,35 @@ CloudTrail → EventBridge Rule → Lambda Enrichment → DynamoDB → SNS Email
 ### 1) EventBridge High-Risk IAM Detection Rule
 Detects sensitive IAM actions from CloudTrail.
 
-![EventBridge Rule](01_eventbridge_detection_rule.png)
+![EventBridge Rule](Screenshots/01_eventbridge_detection_rule.png)
 
 ---
 
 ### 2) Lambda Monitoring & Execution Metrics
 Shows successful processing of events through the detection pipeline.
 
-![Lambda Monitor](02_lambda_monitor_metrics.png)
+![Lambda Monitor](Screenshots/02_lambda_monitor_metrics.png)
 
 ---
 
 ### 3) DynamoDB Incident Evidence Record
 Stores enriched HIGH severity events for investigation.
 
-![DynamoDB Record](03_dynamodb_high_severity_record.png)
+![DynamoDB Record](Screenshots/03_dynamodb_high_severity_record.png)
 
 ---
 
 ### 4) SNS High-Severity Email Alert
 Real-time alert sent with full threat context.
 
-![SNS Alert](04_high_severity_email_alert.png)
+![SNS Alert](Screenshots/04_high_severity_email_alert.png)
 
 ---
 
 ### 5) CloudTrail Logging Pipeline Reference
 Confirms CloudTrail is feeding the detection system.
 
-![CloudTrail](05_detection_pipeline_reference.png)
+![CloudTrail](Screenshots/05_detection_pipeline_reference.png)
 
 ---
 
