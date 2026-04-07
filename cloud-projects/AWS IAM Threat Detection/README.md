@@ -39,39 +39,40 @@ CloudTrail → EventBridge Rule → Lambda Enrichment → DynamoDB → SNS Email
 
 ---
 
-## 📸 Detection Pipeline Screenshots
-
-These screenshots document the **full detection lifecycle**, from event ingestion to alert delivery and evidence retention.
+## 📸 Detection Pipeline Walkthrough
 
 ### 1) EventBridge High-Risk IAM Detection Rule
+Detects sensitive IAM actions from CloudTrail.
 
-Shows the event pattern used to detect dangerous IAM management actions from CloudTrail, including policy attachment and identity changes.
+![EventBridge Rule](01_eventbridge_detection_rule.png)
 
-![EventBridge Rule](sandbox:/mnt/data/01_eventbridge_detection_rule.png)
+---
 
 ### 2) Lambda Monitoring & Execution Metrics
+Shows successful processing of events through the detection pipeline.
 
-Highlights successful serverless processing, invocation counts, duration, concurrency, and throttling visibility through CloudWatch metrics.
+![Lambda Monitor](02_lambda_monitor_metrics.png)
 
-![Lambda Monitor](sandbox:/mnt/data/02_lambda_monitor_metrics.png)
+---
 
 ### 3) DynamoDB Incident Evidence Record
+Stores enriched HIGH severity events for investigation.
 
-Displays a **HIGH severity incident record** enriched by Lambda and persisted for investigation, including actor, event name, timestamp, region, severity, and raw event evidence.
+![DynamoDB Record](03_dynamodb_high_severity_record.png)
 
-![DynamoDB Incident Record](sandbox:/m
+---
 
 ### 4) SNS High-Severity Email Alert
+Real-time alert sent with full threat context.
 
-Demonstrates real-time alert delivery containing threat context, severity classification, source IP, actor ARN, and incident correlation ID.
+![SNS Alert](04_high_severity_email_alert.png)
 
-![SNS Email Alert](./screenshots/04_high_severity_email_alert.png)
+---
 
 ### 5) CloudTrail Logging Pipeline Reference
+Confirms CloudTrail is feeding the detection system.
 
-Validates that CloudTrail successfully captured and delivered IAM management events into the detection pipeline.
-
-![CloudTrail Reference](./screenshots/05_detection_pipeline_reference.png)
+![CloudTrail](05_detection_pipeline_reference.png)
 
 ---
 
