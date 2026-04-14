@@ -6,7 +6,7 @@ This section documents the full compliance evidence transformation lifecycle, fr
 ## 1️⃣ Workflow Orchestration – n8n End-to-End Pipeline
 ### n8n Workflow Overview
 
-![n8n Workflow Overview](./Screenshots/n8n-workflow-overview.png)
+![n8n Workflow Overview](Screenshots/n8n-workflow-overview.png)
 
 **Objective:** Automate the transformation of STIG CKL/XML findings into structured POA&M artifacts.
 
@@ -31,7 +31,7 @@ This validates workflow orchestration and automation of manual RMF evidence hand
 ## 4️⃣ Structured Output – CSV Export Validation
 ### POA&M CSV Output
 
-![POA&M CSV Output](./Screenshots/poam-csv-output.png)
+![POA&M CSV Output](Screenshots/poam-csv-output.png)
 
 **Objective:** Validate successful generation of structured remediation artifacts.
 
