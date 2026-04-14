@@ -86,14 +86,13 @@ benchmark_title
 
 ---
 
-## 🖼️ Screenshots
+## 📸 Workflow Evidence
 
 ### Full n8n Workflow
-![n8n Workflow Overview](./Screenshot%202026-04-13%20202235.png)
+![Full Workflow](./Screenshots/Screenshot%202026-04-13%20202235.png)
 
 ### Final CSV POA&M Output
-![POA&M CSV Output](./Screenshot%202026-04-13%20200557.png)
-
+![CSV Output](./Screenshots/Screenshot%202026-04-13%20200557.png)
 ---
 
 ## 💼 Real-World Use Cases
