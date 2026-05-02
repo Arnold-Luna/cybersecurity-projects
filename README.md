@@ -9,7 +9,7 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 ## 🏆 Highlights
 
 - 🤖 **[AI-Assisted Web App Pentest - CAI Framework](https://github.com/Arnold-Luna/cybersecurity-projects/tree/main/AI-Assisted%20Web%20App%20Pentest%20-%20CAI%20Framework)**  
-  Set up the CAI framework for an authorized web application penetration testing lab, defined scope and rules of engagement, and documented sanitized evidence for public portfolio use.
+  Set up the CAI framework for an authorized web application security assessment, defined scope and rules of engagement, and documented sanitized evidence for public portfolio use.
 
 - 🧠 **[Enterprise SIEM Lab - Wazuh + Suricata + Kali Linux + Fail2Ban](https://github.com/Arnold-Luna/cybersecurity-projects/tree/main/Enterprise%20SIEM%20Lab%20%E2%80%93%20Wazuh%20%2B%20Suricata%20%2B%20Kali%20Linux%20%2B%20Fail2Ban)**  
   End-to-end attack simulation, detection engineering, MITRE ATT&CK mapping (T1110 – Brute Force), and automated containment using Fail2Ban.
@@ -48,7 +48,7 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 ## 🕸️ Web Application Security
 
 - 🤖 **AI-Assisted Web App Pentest - CAI Framework**  
-  Practiced authorized AI-assisted web application testing, documented rules of engagement, and sanitized public evidence for professional reporting.
+  Documented an authorized AI-assisted web application assessment, including rules of engagement, endpoint review, and sanitized public evidence.
 
 ---
 
