@@ -16,6 +16,11 @@ This folder focuses on hands-on cloud labs and projects that build foundational 
   - Severity-based IAM threat triage
   - Real-time alerting and incident evidence retention
 
+- [AWS KMS CloudTrail S3 Encryption Lab](./AWS%20KMS%20CloudTrail%20S3%20Encryption%20Lab/)
+  - Customer-managed KMS key configuration for S3 encryption
+  - SSE-KMS access testing with public URL and SigV4 behavior
+  - CloudTrail evidence review for S3 object and KMS key usage
+
 ## Skills Practiced
 - Cloud environment configuration  
 - Security-first mindset  

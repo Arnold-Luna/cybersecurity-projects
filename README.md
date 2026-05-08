@@ -20,6 +20,9 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 - ☁️ **[AWS Logging & Monitoring Setup](https://github.com/Arnold-Luna/cybersecurity-projects/tree/main/AWS%20Logging%20%26%20Monitoring)**  
   Built baseline logging and auditing posture, validated CloudTrail events, and documented security findings.
 
+- 🔐 **[AWS KMS CloudTrail S3 Encryption Lab](https://github.com/Arnold-Luna/cybersecurity-projects/tree/main/cloud-projects/AWS%20KMS%20CloudTrail%20S3%20Encryption%20Lab)**  
+  Encrypted an S3 object with a customer-managed KMS key, tested public access behavior, and documented sanitized CloudTrail evidence for key usage.
+
 - 🌐 **[Network Recon & Service Enumeration Lab](https://github.com/Arnold-Luna/cybersecurity-projects/tree/main/Network%20Recon%20Lab)**  
   Conducted controlled Nmap scans, analyzed exposed services, mapped risks, and proposed mitigations.
 
@@ -71,6 +74,8 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 - Network Reconnaissance (Nmap)
 - Brute Force Simulation (Hydra)
 - Cloud Logging & Monitoring (AWS)
+- AWS KMS & S3 Encryption
+- CloudTrail Audit Evidence Review
 - AI-Assisted Security Testing
 - Web Application Testing Scope & Rules of Engagement
 - Incident Documentation & Reporting
