@@ -63,6 +63,21 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 - ☁️ **AWS Logging & Monitoring Setup**  
   Validated logging configurations and analyzed event visibility across AWS services.
 
+- **[RIG Exploit Kit Malware Investigation](security-onion-rig-exploit-kit-investigation/README.md)**
+  Reconstructed a drive-by malware infection using Security Onion, Kibana, Sguil, CapME, Wireshark, NetworkMiner, and VirusTotal hash analysis.
+
+- **[Windows Host Remcos RAT Investigation](windows-host-remcos-rat-investigation/README.md)**
+  Investigated a Windows host compromise, identified downloaded executables, tied activity to Remcos RAT, and documented containment recommendations.
+
+- **[HTTP SQL Injection And DNS Exfiltration Analysis](http-dns-exfiltration-analysis/README.md)**
+  Analyzed HTTP SQL injection evidence and suspicious DNS queries carrying encoded data through allowed DNS traffic.
+
+- **[Compromised Host Investigation Using The 5-Tuple](compromised-host-5-tuple-investigation/README.md)**
+  Used the 5-tuple, Sguil, Wireshark, Kibana, FTP logs, and file logs to isolate unauthorized file access.
+
+- **[Extracting An Executable From A PCAP](pcap-executable-extraction/README.md)**
+  Practiced packet-level file recovery by extracting a Windows executable from HTTP traffic and identifying safe malware-analysis next steps.
+
 ---
 
 ## 🛠 Core Skills Demonstrated
@@ -79,3 +94,8 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 - AI-Assisted Security Testing
 - Web Application Testing Scope & Rules of Engagement
 - Incident Documentation & Reporting
+- Security Onion Alert Triage
+- Sguil, Kibana, CapME, and Wireshark Pivoting
+- PCAP File Extraction
+- DNS Exfiltration Analysis
+- Malware Hash Reputation Checks
