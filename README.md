@@ -30,52 +30,64 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 
 ## 📌 Incident Response
 
-- 🧠 **Enterprise SIEM Lab**  
+- 🧠 **[Enterprise SIEM Lab](Enterprise%20SIEM%20Lab%20%E2%80%93%20Wazuh%20%2B%20Suricata%20%2B%20Kali%20Linux%20%2B%20Fail2Ban/)**
+
   Simulated SSH brute-force attack using Hydra from Kali Linux, analyzed authentication failures in Wazuh (Rule 5760), mapped activity to MITRE ATT&CK T1110, and implemented automated IP blocking with Fail2Ban.
 
-- ✉️ **Email Authentication Assessment**  
+- ✉️ **[Email Authentication Assessment](Incident%20Response/email-authentication-assessment/)**
+
   Reviewed SPF, DKIM, and DMARC configurations to assess spoofing risk and strengthen defensive posture.
 
 ---
 
 ## 🌐 Network Defense
 
-- 🧠 **Enterprise SIEM Lab**  
+- 🧠 **[Enterprise SIEM Lab](Enterprise%20SIEM%20Lab%20%E2%80%93%20Wazuh%20%2B%20Suricata%20%2B%20Kali%20Linux%20%2B%20Fail2Ban/)**
+
   Performed reconnaissance with Nmap, identified exposed SSH services, correlated brute-force attempts, and enforced host-based defensive controls.
 
-- 🌐 **Network Recon & Service Enumeration Lab**  
+- 🌐 **[Network Recon & Service Enumeration Lab](nmap-localhost-scan/)**
+
   Enumerated services, reviewed attack surface, and documented potential exploitation paths.
 
 ---
 
 ## 🕸️ Web Application Security
 
-- 🤖 **AI-Assisted Web App Pentest - CAI Framework**  
+- 🤖 **[AI-Assisted Web App Pentest - CAI Framework](AI-Assisted%20Web%20App%20Pentest%20-%20CAI%20Framework/)**
+
   Documented an authorized AI-assisted web application assessment, including rules of engagement, endpoint review, and sanitized public evidence.
 
 ---
 
 ## 🔍 Threat Analysis
 
-- 🧠 **Enterprise SIEM Lab**  
+- 🧠 **[Enterprise SIEM Lab](Enterprise%20SIEM%20Lab%20%E2%80%93%20Wazuh%20%2B%20Suricata%20%2B%20Kali%20Linux%20%2B%20Fail2Ban/)**
+
   Investigated authentication failure events, reviewed Wazuh rule metadata, analyzed alert severity, and correlated attack behavior across logs.
 
-- ☁️ **AWS Logging & Monitoring Setup**  
+- ☁️ **[AWS Logging & Monitoring Setup](cloud-projects/AWS%20IAM%20Threat%20Detection/)**
+
   Validated logging configurations and analyzed event visibility across AWS services.
 
-- **[RIG Exploit Kit Malware Investigation](security-onion-rig-exploit-kit-investigation/README.md)**
+- **[RIG Exploit Kit Malware Investigation](security-onion-rig-exploit-kit-investigation/)**
+
   Reconstructed a drive-by malware infection using Security Onion, Kibana, Sguil, CapME, Wireshark, NetworkMiner, and VirusTotal hash analysis.
 
-- **[Windows Host Remcos RAT Investigation](windows-host-remcos-rat-investigation/README.md)**
+- **[Windows Host Remcos RAT Investigation](windows-host-remcos-rat-investigation/)**
+
   Investigated a Windows host compromise, identified downloaded executables, tied activity to Remcos RAT, and documented containment recommendations.
 
-- **[HTTP SQL Injection And DNS Exfiltration Analysis](http-dns-exfiltration-analysis/README.md)**
+- **[HTTP SQL Injection And DNS Exfiltration Analysis](http-dns-exfiltration-analysis/)**
+
   Analyzed HTTP SQL injection evidence and suspicious DNS queries carrying encoded data through allowed DNS traffic.
 
-- **[Compromised Host Investigation Using The 5-Tuple](compromised-host-5-tuple-investigation/README.md)**
+- **[Compromised Host Investigation Using The 5-Tuple](compromised-host-5-tuple-investigation/)**
+
   Used the 5-tuple, Sguil, Wireshark, Kibana, FTP logs, and file logs to isolate unauthorized file access.
 
-- **[Extracting An Executable From A PCAP](pcap-executable-extraction/README.md)**
+- **[Extracting An Executable From A PCAP](pcap-executable-extraction/)**
+
   Practiced packet-level file recovery by extracting a Windows executable from HTTP traffic and identifying safe malware-analysis next steps.
 
 ---
