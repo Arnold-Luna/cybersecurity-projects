@@ -4,8 +4,6 @@
 
 This project documents a Security Onion/Kibana investigation of two related data-exposure patterns: SQL injection over HTTP and data exfiltration through DNS queries. The goal was to identify the attacker activity, determine what was accessed, and explain why DNS can be abused as an exfiltration channel.
 
-This write-up is based on a controlled Cisco/NetAcad lab. No Cisco worksheets, raw lab data, or copyrighted lab screenshots are included in this repository.
-
 ## Scenario
 
 Security personnel determined that an exploit occurred during June 2020 and that sensitive data may have been exposed. The investigation focused on:
@@ -113,14 +111,6 @@ The decoded result showed that the long DNS labels were not normal subdomains. T
 - Log DNS queries centrally and retain enough history for exfiltration investigations.
 - Treat DNS as a security telemetry source, not just basic network plumbing.
 
-## Screenshots To Add Before Publishing
-
-- Kibana HTTP dashboard showing the filtered June 2020 event.
-- Sanitized HTTP log detail showing the SQL injection pattern.
-- CapME transcript with sensitive values redacted.
-- Kibana DNS dashboard showing long suspicious subdomains.
-- Terminal output showing `xxd` decode workflow with decoded content redacted.
-
 ## Skills Demonstrated
 
 - Web attack log analysis
@@ -131,7 +121,3 @@ The decoded result showed that the long DNS labels were not normal subdomains. T
 - Sensitive-data redaction
 - Exfiltration analysis
 - SOC-style finding documentation
-
-## Safety Note
-
-Do not publish exposed usernames, passwords, credit card values, or raw private data in a public repository. Public write-ups should use sanitized examples and explain the impact without leaking sensitive content.
