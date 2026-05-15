@@ -4,8 +4,6 @@
 
 This project documents how I analyzed a packet capture in Wireshark and extracted a downloaded Windows executable from HTTP traffic. The goal was to understand how file downloads appear at the packet level and how an analyst can safely recover an object for further malware analysis.
 
-This write-up is based on a controlled Cisco/NetAcad lab. No executable files, raw PCAPs, Cisco worksheets, or copyrighted lab screenshots are included in this repository.
-
 ## Scenario
 
 The lab PCAP, `nimda.download.pcap`, contained traffic related to a malware download. The task was to:
@@ -129,14 +127,6 @@ sha256sum W32.Nimda.Amm.exe
 - Store PCAPs and HTTP logs long enough for retrospective analysis.
 - Detonate suspicious binaries only in an isolated malware-analysis environment.
 
-## Screenshots To Add Before Publishing
-
-- Wireshark packet list showing the HTTP GET request.
-- Follow TCP Stream view with binary data.
-- HTTP object export window.
-- Terminal output of the `file` command.
-- Optional hash output with the hash value redacted if needed.
-
 ## Skills Demonstrated
 
 - PCAP analysis
@@ -146,7 +136,3 @@ sha256sum W32.Nimda.Amm.exe
 - Windows PE identification
 - Malware-handling safety awareness
 - Analyst documentation
-
-## Safety Note
-
-Do not upload extracted executables to GitHub. Public write-ups should include analysis notes, hashes, and screenshots, not potentially dangerous binaries.
