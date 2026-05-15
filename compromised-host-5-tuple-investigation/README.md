@@ -132,14 +132,6 @@ The lab notes indicated the transferred file content appeared blank when reviewe
 - Block unauthorized ports and validate firewall rules.
 - Perform a broader forensic review to confirm whether other hosts were affected.
 
-## Screenshots To Add Before Publishing
-
-- Sguil alert showing `id check returned root`.
-- Wireshark Follow TCP Stream evidence with sensitive values redacted.
-- Kibana FTP log filter.
-- Kibana file log showing `FTP_DATA`.
-- Final 5-tuple evidence table.
-
 ## Skills Demonstrated
 
 - 5-tuple network-flow analysis
