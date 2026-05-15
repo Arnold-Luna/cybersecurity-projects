@@ -66,16 +66,6 @@ no access-list 11
 - ICMP ping testing
 - ACL and interface show commands
 
-## Recommended Live Screenshots to Add
-
-Add these images to the `screenshots/` folder before publishing for the strongest GitHub presentation:
-
-- Packet Tracer topology overview
-- Failed ping from PC1 to the remote host or DNS server
-- `show access-lists` output showing ACL 11
-- Router interface configuration showing ACL direction
-- Successful ping after ACL removal
-
 ## Portfolio Summary
 
 This project is a clean example of network access control and troubleshooting. It shows that you can identify a policy-based connectivity issue, verify it with CLI commands, safely remove the filter, and prove the fix.
