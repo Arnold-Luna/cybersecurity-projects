@@ -4,8 +4,6 @@
 
 This project documents an investigation of a Windows host infection using Security Onion, Sguil, Kibana, Wireshark, and file reputation analysis. The case centered on identifying the infected host, downloaded executables, and command-and-control behavior related to Remcos RAT.
 
-This write-up is based on a controlled Cisco/NetAcad lab derived from malware-traffic-analysis.net training material. No malware samples, PCAPs, Cisco worksheets, or copyrighted lab screenshots are included in this repository.
-
 ## Scenario
 
 Network security monitoring tools alerted on suspicious traffic from a Windows host on `2019-03-19`. The investigation needed to determine:
@@ -161,15 +159,6 @@ toptoptop1[.]online
 - Review DNS and HTTP logs for other hosts contacting the same infrastructure.
 - Reimage the host if malware persistence cannot be confidently removed.
 
-## Screenshots To Add Before Publishing
-
-- Sguil alert list for `2019-03-19`.
-- Wireshark HTTP object export showing `test1.exe`.
-- Terminal screenshot of the SHA256 hash.
-- Talos result for the file hash.
-- Kibana HTTP dashboard showing suspicious URIs.
-- DNS dashboard showing suspicious query activity.
-
 ## Skills Demonstrated
 
 - Windows malware triage
@@ -179,7 +168,3 @@ toptoptop1[.]online
 - Hash-based malware reputation lookup
 - Distinguishing suspicious traffic from normal OS background traffic
 - Incident response recommendation writing
-
-## Safety Note
-
-Do not publish recovered executables or active malware samples. A public portfolio post should include hashes, screenshots, and written analysis rather than dangerous binaries.
