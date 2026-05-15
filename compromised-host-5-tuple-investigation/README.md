@@ -4,8 +4,6 @@
 
 This project documents a Security Onion investigation that used the 5-tuple to isolate suspicious traffic, identify unauthorized access, and determine how a file named `confidential.txt` was accessed over FTP.
 
-This write-up is based on a controlled Cisco/NetAcad lab. No Cisco worksheets, raw lab data, PCAPs, or copyrighted lab screenshots are included in this repository.
-
 ## Scenario
 
 After an attack, users reported that `confidential.txt` was no longer accessible. The investigation used Sguil, Wireshark, and Kibana to answer:
