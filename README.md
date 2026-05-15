@@ -26,6 +26,9 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 - 🌐 **[Network Recon & Service Enumeration Lab](https://github.com/Arnold-Luna/cybersecurity-projects/tree/main/Network%20Recon%20Lab)**  
   Conducted controlled Nmap scans, analyzed exposed services, mapped risks, and proposed mitigations.
 
+- 📡 **[Packet Tracer Security Labs](Packet%20Tracer%20Security%20Labs/)**
+  Documented Cisco Packet Tracer projects covering centralized logging, NetFlow, AAA accounting, FTP traffic exposure, syslog review, and ACL troubleshooting.
+
 ---
 
 ## 📌 Incident Response
@@ -49,6 +52,10 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 - 🌐 **[Network Recon & Service Enumeration Lab](nmap-localhost-scan/)**
 
   Enumerated services, reviewed attack surface, and documented potential exploitation paths.
+
+- 📡 **[Packet Tracer Security Labs](Packet%20Tracer%20Security%20Labs/)**
+
+  Built public-ready writeups for network monitoring and access-control scenarios, including Syslog, NetFlow, AAA/TACACS+, plaintext FTP analysis, and ACL validation.
 
 ---
 
@@ -111,3 +118,6 @@ Everything here is built to be repeatable, documented, and reviewable (screensho
 - PCAP File Extraction
 - DNS Exfiltration Analysis
 - Malware Hash Reputation Checks
+- Cisco Packet Tracer
+- Syslog, NetFlow, and AAA Accounting
+- Access Control List Troubleshooting
