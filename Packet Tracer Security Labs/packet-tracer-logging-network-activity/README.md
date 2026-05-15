@@ -53,16 +53,6 @@ FTP and Telnet should be replaced with encrypted alternatives:
 - Router CLI
 - Syslog service
 
-## Recommended Live Screenshots to Add
-
-Add these images to the `screenshots/` folder before publishing for the strongest GitHub presentation:
-
-- Packet Tracer topology overview
-- Sniffer packet details showing FTP application data, with sensitive values redacted
-- FTP upload command output
-- Router CLI showing ICMP debugging
-- Syslog server showing ICMP messages from multiple PCs
-
 ## Portfolio Summary
 
 This project is a practical security demonstration: it shows how an attacker or analyst can observe plaintext network traffic, then uses logs to validate activity. It is a strong GitHub project because it connects traffic analysis, logging, and mitigation.
