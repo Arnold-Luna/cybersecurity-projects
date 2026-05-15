@@ -52,8 +52,3 @@ FTP and Telnet should be replaced with encrypted alternatives:
 - FTP client and server
 - Router CLI
 - Syslog service
-
-## Portfolio Summary
-
-This project is a practical security demonstration: it shows how an attacker or analyst can observe plaintext network traffic, then uses logs to validate activity. It is a strong GitHub project because it connects traffic analysis, logging, and mitigation.
-
