@@ -12,15 +12,3 @@ This folder contains three GitHub-ready Packet Tracer project writeups based on 
 
 3. [ACL Demonstration](packet-tracer-acl-demonstration/README.md)
    - Focus: access control lists, ping testing, router verification commands, ACL removal and retesting.
-
-## Publishing Notes
-
-The original Cisco NetAcad documents and Packet Tracer activity files are not included here. These repositories use original README content and generated portfolio visuals so they are safer to publish publicly.
-
-Before posting on GitHub, the strongest version would include your own live Packet Tracer screenshots in each `screenshots/` folder:
-
-- Topology overview
-- Relevant command output
-- Log or packet-capture evidence
-- Before/after test results
-
