@@ -43,16 +43,6 @@ The project is useful for showing blue-team fundamentals: collecting logs, track
 - NetFlow Collector
 - Router and firewall CLI
 
-## Recommended Live Screenshots to Add
-
-Add these images to the `screenshots/` folder before publishing for the strongest GitHub presentation:
-
-- Packet Tracer topology overview
-- Syslog server showing router debug messages
-- AAA Accounting Records window after login/logout
-- NetFlow Collector pie chart or flow details
-- CLI window showing successful authenticated access
-
 ## Portfolio Summary
 
 This project shows the foundation of network security monitoring. It connects device logs, user access records, and flow telemetry into one investigation story, which is directly relevant to SOC analyst, network security, and cyber operations roles.
